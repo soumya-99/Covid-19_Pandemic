@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#social-media .container .icons a img{
+      width: 10%;
+      height: 10%;
+}
+
+#social-media .container .icons a:hover img{
+      transform: translateY(-12px);
+}
+
+#header .container .jumbotron{
+      background-image: linear-gradient(to right, #F4B400, #0F9D58, #DB4437);
+      color: antiquewhite;
+}
+
+#TotalData .container .nav-item a#menu1{
+      color: red;
+}
+
+#footer .container-fluid{
+	background-color: lightgrey;
+}
+
+#footer .container-fluid p img{
+	width: 4%;
+    height: 4%;
+}
+
+#footer .container-fluid p{
+	font-size: 150%;
+	font-weight: 10px;
+}
