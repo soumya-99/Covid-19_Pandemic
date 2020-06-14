@@ -44,6 +44,9 @@ $(document).ready(function(){
 
         var myChart = document.getElementById("myChart").getContext('2d')
 
+        var ctx = document.getElementById("myChart");
+        ctx.height = 180;
+
         var chart = new Chart(myChart,{
             type:'line',
             data:{
