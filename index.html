@@ -10,7 +10,9 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="robots" content="Corona Virus: A Vulnarable Virus For Human Race">
   	<meta name="robots" content="index">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+	<script src="./main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="smooth-scroll.js"></script>
@@ -174,8 +176,42 @@ Some Countries like America & India are trying to use the Bengal Chemical's (Cre
     </div>
 
     <div id="menu4" class="container tab-pane fade"><br>
-      <h3>Global Statistics<sup>[Updated Every 24 Hours]<span style="color: red;">*</span></sup></h3>
-      <p>----------------------------</p>
+      <h3>Global Statistics</h3>
+	  <p><hr></p>
+	  
+	  <p>
+		  <h2 class="text-center">Details Of India<sup>[Updated Every 24 Hours]<span style="color: red;">*</span></sup></h2>
+		  <hr>
+		<div class="container my-3">
+			<div class="row text-center">
+				<div class="col-sm-3 text-warning">
+					<h4>Confirmed</h4>
+					<p id="confirmed"></p>
+				</div>
+				<div class="col-sm-3 text-info">
+					<h4>Active</h4>
+					<p id="active"></p>
+				</div>
+				<div class="col-sm-3 text-success">
+					<h4>Recovered</h4>
+					<p id="recovered"></p>
+				</div>
+				<div class="col-sm-3 text-danger">
+					<h4>Decreased</h4>
+					<p id="deaths"></p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="container-fluid">
+			<canvas id="myChart"></canvas>
+		</div>
+	  </p>
+
+	  <br>
+	  <hr>
+	  <h2>Global Cases<sup>[Couldn't be Updated Every 24 Hours]<span style="color: red;">*</span></sup></h2>
+	  <hr>
       <p>
       	<h4>Globally Confirmed Cases: 55,91,067 [27.05.2020, 12:00 AM IST]<span style="color: red;">*</span></h4>
       	<h4>Globally Confirmed Recovery: 22,87,152 [27.05.2020, 12:00 AM IST]<span style="color: red;">*</span></h4>
@@ -192,13 +228,7 @@ Some Countries like America & India are trying to use the Bengal Chemical's (Cre
         <th>Deaths</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>India</td>
-        <td>1,51,767</td>
-        <td>64,426</td>
-        <td>4,337</td>
-      </tr>      
+    <tbody>      
       <tr class="table-primary">
         <td>Italy</td>
         <td>2,30,555</td>
@@ -296,6 +326,7 @@ Some Countries like America & India are trying to use the Bengal Chemical's (Cre
 <section id="social-media">
 <div class="container text-center">
 	<h1>Connect With Us</h1>
+	<hr>
 	<div class="icons">
 		<a href="#"><img src="whatsapp.png"></a>
 		<a href="https://www.facebook.com/soumyadeep.mondal.984/"><img src="fb.png"></a>
@@ -321,7 +352,7 @@ Some Countries like America & India are trying to use the Bengal Chemical's (Cre
 		<div class="row">
 			<div class="col-sm-6">
 				<h5>Contact No.</h5>
-				<p>8910792003</p>
+				<p>891XXXXXXX</p>
 			</div>
 			<div class="col-sm-6">
 				<h5>Follow Me For More Interesting Projects</h5>
@@ -330,8 +361,8 @@ Some Countries like America & India are trying to use the Bengal Chemical's (Cre
 		</div>
 		<center>
 		<p>----------------------------</p>
-		©This Website is created by Soumyadeep Mondal
-	</center>
+		©Copyright 2020 by Soumyadeep Mondal, all rights reserved.
+		</center>
 	</div>
 	
 </section>
