@@ -1,6 +1,28 @@
 $(document).ready(function(){
 
 
+    //For Worldwide Details
+    init()
+
+    function init(){
+        var urlG = "https://api.covid19api.com/summary"
+        var dataG = ''
+
+        $.get(urlG, function(dataG){
+            console.log(dataG.Global)
+
+            dataG = `
+                <td style="font-size: 18px;" class="text-warning">${dataG.Global.TotalConfirmed}</td>
+                <td style="font-size: 18px;" class="text-info">${dataG.Global.NewConfirmed}</td>
+                <td style="font-size: 18px;" class="text-success">${dataG.Global.TotalRecovered}</td>
+                <td style="font-size: 18px;" class="text-danger">${dataG.Global.TotalDeaths}</td>
+            `
+
+            $("#globe").html(dataG)
+        })
+    }
+
+    //For India Details
     var url = "https://api.covid19india.org/data.json"
 
 
